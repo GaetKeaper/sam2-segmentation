@@ -14,11 +14,16 @@
  * limitations under the License.
  */
 import SAM2DemoApp from '@/demo/SAM2DemoApp';
+import ForensicDashboard from '@/forensic/ForensicDashboard';
 import SettingsContextProvider from '@/settings/SettingsContextProvider';
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 
 export default function App() {
   const router = createBrowserRouter([
+    {
+      path: '/forensic',
+      element: <ForensicDashboard />,
+    },
     {
       path: '*',
       element: (
