@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd demo/frontend && yarn install && yarn build",
+  "outputDirectory": "demo/frontend/dist",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
